@@ -5,7 +5,7 @@ def error_message_detail(error,error_detail:sys):   #2 paramter is present insid
     _,_,exc_tb = error_detail.exc_info()        #first 2 return values are not useful;3 ret value is stored in variable which contains all info
     file_name = exc_tb.tb_frame.f_code.co_filename   #provide file name
 
-    error_msg = "Error occured in py script name[{0}] line number[{1} error msg[{3}]]".format(
+    error_msg = "Error occured in py script name[{0}] line number[{1} error msg[{2}]]".format(
         file_name,exc_tb.tb_lineno,str(error)    #all placeholder are used for displaying msg
     )
 
