@@ -1,2 +1,5 @@
 pandas
--e .
+numpy
+seaborn
+matplotlib
+# -e .
